@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Some demo payment</title>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet doloribus eum exercitationem illum maxime minus natus tenetur. Asperiores corporis, optio.</span>
+        </div>
+        <div class="col-xs-4">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet doloribus eum exercitationem illum maxime minus natus tenetur. Asperiores corporis, optio.</span>
+        </div>
+
+    </div>
+    <div class="row">
+    </div>
+    <div class="col-xs-6 col-lg-4">
+        <div class="panel panel-warning">
+            <div class="panel-heading">Buy something</div>
+            <div class="panel-body">
+                <form action="/charge" method="POST">
+                    <script
+                            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                            data-key="pk_test_wX1PhgEn6kVpcvKxUgeXXc2i"
+                            data-amount="999"
+                            data-name="Demo payment"
+                            data-description="Widget"
+                            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                            data-locale="auto">
+                    </script>
+                    <input type="hidden" value="999" name="chargeAmount">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
