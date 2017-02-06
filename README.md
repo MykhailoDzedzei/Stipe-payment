@@ -1,7 +1,7 @@
 # Stripe Payment
 To start project you need  do those steps:
 - npm install
-- node app.js
+- npm start
 
 ###Technologies:
 
